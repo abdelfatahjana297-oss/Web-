@@ -1,35 +1,166 @@
 <!DOCTYPE html>
-<html>
-    <title> LOG IN</title>
-    <a href="index.html">Go to Home</a>
+<html lang="en">
+<head>
+    <title>LOG IN</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma,  Verdana;
+            background-color: #fffaf0;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .home-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #d35400;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+
+        /* The main form container */
+        .form-container {
+            background: white;
+            max-width: 450px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: left; 
+        }
+
+        label {
+            font-weight: bold;
+            color: #2c3e50;
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box; /* Ensures padding doesn't break width */
+        }
+
+        /* Styling the Radio Buttons section */
+        .trip-selection {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .radio-group {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .radio-group input {
+            margin-right: 10px;
+        }
+
+        /* Styling the Buttons */
+        .btn-group {
+            margin-top: 30px;
+            display: flex;
+            gap: 10px;
+        }
+
+        input[type="submit"], 
+        input[type="reset"] {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="submit"] {
+            background-color: #d35400ec;
+            color: white;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #a04000;
+        }
+
+        input[type="reset"] {
+            background-color: #ecf0f1;
+            color: #7f8c8d;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #bdc3c7;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="home-link">← Go to Home</a>
+
     <h1>Are you ready to make your own memories with us?</h1>
-<form>
-    <br><input type="button" value="log in"><br>
-     <label>First name:</label><br> <input type="text"  name="fname"><br>
-    <label>Password:</label><br><input type="password" name="pwd"><br>
-    <label>Email Address:</label><br>
-<input type="email" name="user_email"><br>
-<label>Phone Number:</label><br>
-<input type="tel" name="user_phone"><br>
-    <br><input type="submit" value="Submit"><br>
-    <br><input type="reset" value="Reset"><br>
-    </form>
-    <p>let us know which trip you Choose:</p>
-<form>
-  <input type="radio" name="chosen trip" value="ST.CATHERINE&NUWEBAI">
-  <label for="ST.CATHERINE&NUWEBAI">ST.CATHERINE&NUWEBAI</label><br>
-  <input type="radio"  name="chosen trip" value="SIWA">
-  <label for="SIWA">SIWA</label><br>
-  <input type="radio"  name="chosen trip" value="Dahab">
-  <label for="Dahab">Dahab</label><br>
-   <input type="radio"  name="chosen trip" value="Fayum">
-  <label for="Fayum">Fayum</label><br>
-</form> 
-    
- 
 
+    <div class="form-container">
+        <form>
+            <label>First name:</label>
+            <input type="text" name="fname">
 
+            <label>Email Address:</label>
+            <input type="email" name="user_email">
 
+            <label>Phone Number:</label>
+            <input type="tel" name="user_phone">
 
+            <label>Password:</label>
+            <input type="password" name="pwd">
 
+            <div class="trip-selection">
+                <p style="font-weight: bold; color: #d35400;">Choose your destination:</p>
+                
+                <div class="radio-group">
+                    <input type="radio" name="trip" id="stc" value="ST.CATHERINE">
+                    <label for="stc" style="margin:0; font-weight: normal;">St. Catherine & Nuweiba</label>
+                </div>
+
+                <div class="radio-group">
+                    <input type="radio" name="trip" id="siwa" value="SIWA">
+                    <label for="siwa" style="margin:0; font-weight: normal;">Siwa Oasis</label>
+                </div>
+
+                <div class="radio-group">
+                    <input type="radio" name="trip" id="dahab" value="Dahab">
+                    <label for="dahab" style="margin:0; font-weight: normal;">Dahab</label>
+                </div>
+
+                <div class="radio-group">
+                    <input type="radio" name="trip" id="fayum" value="Fayum">
+                    <label for="fayum" style="margin:0; font-weight: normal;">Fayoum</label>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <input type="submit" value="Submit Registration">
+                <input type="reset" value="Clear Form">
+            </div>
+        </form> 
+    </div>
+
+</body>
 </html>
