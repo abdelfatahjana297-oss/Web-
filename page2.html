@@ -1,72 +1,144 @@
 <!DOCTYPE html>
-<html>
-    <title> TRIPS 🔥</title>
-    <a href="index.html">Go to Home</a>
-<h1>Top Distinations</h1>
-<body> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TRIPS 🔥</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fffaf0; /* Warm cream background */
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
 
+        /* Navigation Link */
+        .home-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #d35400;
+            font-weight: bold;
+        }
 
-<a href="page3.html">Book Now</a>
-<h3>Dahab</h3>
- <img src="dahab1.jpeg"
-        alt="loading" width="400">
-        <p> price:1900 EGP</p>
-<h4> About this trip</h4>
-<p> Let’s escape to a peaceful town, known for its stunning Red Sea beaches and
-     clear waters. It’s a popular destination for diving, snorkeling, and water
-      sports due to its vibrant coral reefs. The town also offers hiking opportunitie
-      s in the nearby Sinai mountains, including Mount Sinai. Dahab has a relaxed,
-       laid-back vibe, attracting eco-tourists and backpackers seeking 
-       tranquility🌴🕊️.</p>
-       
-</body> 
-<hr>
+        h1 {
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Trip Card Container */
+        .trip-card {
+            background: white;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-bottom: 5px solid #d35400;
+        }
+
+        h3 {
+            color: #d35400;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        img {
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #2c3e50;
+            background: #fdf2e9;
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        .book-btn {
+            display: inline-block;
+            background-color: #d35400;
+            color: white;
+            text-decoration: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        .book-btn:hover {
+            background-color: #a04000;
+            transform: translateY(-2px);
+        }
+
+        p {
+            color: #555;
+            text-align: left;
+            padding: 0 10px;
+        }
+
+        h4 {
+            color: #2c3e50;
+            margin-top: 20px;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+    </style>
+</head>
 <body>
-       <a href="page3.html">Book Now</a>
-<h3>SIWA</h3>
- <img src="siwa.jpeg"
-        alt="loading" width="400">
-        <p> price:1700 EGP</p>
-<h4> About this trip</h4>
-      <p> Siwa is a hidden oasis—a peaceful desert escape 🌴surrounded by palm
-         trees, salt lakes, and golden dunes. Known for its natural beauty, hot springs,
-          and rich Berber culture, it’s the perfect getaway
-         for those seeking calm, adventure, and stunning sunsets</p>
+
+    <a href="index.html" class="home-link">← Go to Home</a>
+    
+    <h1>Top Destinations</h1>
+
+    <div class="trip-card">
+        <h3>DAHAB</h3>
+        <img src="dahab1.jpeg" alt="Dahab Beach">
+        <br>
+        <span class="price">Price: 1900 EGP</span>
+        <h4>About this trip</h4>
+        <p>Let’s escape to a peaceful town, known for its stunning Red Sea beaches and clear waters. It’s a popular destination for diving, snorkeling, and water sports. Dahab has a relaxed, laid-back vibe, attracting eco-tourists and backpackers seeking tranquility 🌴🕊️.</p>
+        <a href="page3.html" class="book-btn">Book Now</a>
+    </div>
+
+    <div class="trip-card">
+        <h3>SIWA</h3>
+        <img src="siwa.jpeg" alt="Siwa Oasis">
+        <br>
+        <span class="price">Price: 1700 EGP</span>
+        <h4>About this trip</h4>
+        <p>Siwa is a hidden oasis—a peaceful desert escape 🌴 surrounded by palm trees, salt lakes, and golden dunes. Known for its natural beauty, hot springs, and rich Berber culture, it’s the perfect getaway for those seeking calm, adventure, and stunning sunsets.</p>
+        <a href="page3.html" class="book-btn">Book Now</a>
+    </div>
+
+    <div class="trip-card">
+        <h3>ST. CATHERINE & NUWEIBA</h3>
+        <img src="nw.jpeg" alt="Nuweiba Mountains">
+        <br>
+        <span class="price">Price: 2500 EGP</span>
+        <h4>About this trip</h4>
+        <p>A soulful escape between the sea and the mountains. We start in Nuweiba, where slow mornings, beach camps and turquoise water await. Then we head to St. Catherine 🏔️. This trip is all about balance: sea × mountains, chill × adventure, fun × peace.</p>
+        <a href="page3.html" class="book-btn">Book Now</a>
+    </div>
+
+    <div class="trip-card">
+        <h3>FAYOUM</h3>
+        <img src="fayum.jpeg" alt="Fayoum Desert">
+        <br>
+        <span class="price">Price: 1100 EGP</span>
+        <h4>About this trip</h4>
+        <p>Get ready to escape the city and dive into Fayoum’s wild side — sand dunes, desert sunsets, lake views, and endless fun with the Arc crowd 🏜️.</p>
+        <a href="page3.html" class="book-btn">Book Now</a>
+    </div>
+
 </body>
-<hr>
-<body>
-  <a href="page3.html">Book Now</a>
-<h3>ST.CATHERINE&NUWEBAI</h3>
- <img src="nw.jpeg"
-        alt="loading" width="400">
-        <p> price:2500 EGP</p>
-<h4> About this trip</h4>
-<p>Nuweiba & St. Catherine Trip
- A soulful escape between the sea and the mountains.
- We start in Nuweiba, where slow mornings, beach camps and turquoise water🏝️Then we head to St. Catherine 🏔️surrounded by Sinai’s majestic mountains. A place of silence, history, and breathtaking views—perfect for grounding, reflection, and reconnecting with nature.
- This trip is all about balance: sea × mountains, chill × adventure, fun × peace</p>
-</body>
-<hr>
-<body>
- <a href="page3.html">Book Now</a>
-<h3>Fayum</h3>
- <img src="fayum.jpeg"
-        alt="loading" width="400">
-        <p> price:1100 EGP</p>
-<h4> About this trip</h4>
-<p> 
-Get ready to escape the city and dive into Fayoum’s wild side — 
-sand dunes, desert sunsets,
- lake views, and endless fun with the Arc crowd🏜️
-</p>
-
-
-
-</body>
- 
-
-
-
-
-
 </html>
